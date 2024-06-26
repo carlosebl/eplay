@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { breakpoints, cores } from '../../styles'
+import { colors, breakpoints } from '../../styles'
 import { TagContainer } from '../Tag/styles'
 
 export const Banner = styled.div`
@@ -11,13 +11,14 @@ export const Banner = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+
   padding-top: 16px;
 
   @media (max-width: ${breakpoints.tablet}) {
     background-size: cover;
   }
 
-  &:after {
+  &::after {
     position: absolute;
     background-color: #000;
     width: 100%;
@@ -37,14 +38,14 @@ export const Banner = styled.div`
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100%;
+    justify-content: space-between;
   }
 `
 
 export const Infos = styled.div`
   padding: 16px;
-  background-color: ${cores.preta};
+  background-color: ${colors.black};
   max-width: 290px;
   font-weight: bold;
 
